@@ -1,0 +1,35 @@
+body{
+    background: #ffeaa7;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #999;
+}
+
+.wrapper{
+    max-width: 768px;
+    margin: auto;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+h1{
+    text-align: center;
+    border-bottom: 3px #444 solid;
+    font-size: 1.4rem;
+    color: #444;
+}
+
+h2{
+    font-size: 1.2rem;
+}
+
+.project-container{
+    background: #444;
+    padding: 2%;
+    margin-bottom: 5%;
+}
+
+.all-projects{
+    color: #e2e6fa;
+    text-align: center;
+
+}
