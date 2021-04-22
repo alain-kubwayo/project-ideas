@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Models\Project;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +15,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('projects', function () {
+    $projects = Project::all();
+    return view('welcome', compact('projects'));
+})->name('projects.index');
+
+Route::get('projects/{slug}', function ($slug) {
+    $project = Project::find($slug);
+    return view('project', compact('project'));
 });

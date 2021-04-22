@@ -31,5 +31,9 @@ h2{
 .all-projects{
     color: #e2e6fa;
     text-align: center;
+}
 
+.project-content{
+    margin-bottom: 20px;
+    background: #111
 }
