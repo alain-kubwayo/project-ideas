@@ -4,8 +4,6 @@ use Illuminate\Support\Facades\Route;
 
 use App\Models\Project;
 
-use Illuminate\Support\Facades\File;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -23,6 +21,6 @@ Route::get('projects', function () {
 });
 
 Route::get('projects/{slug}', function ($slug) {
-    $project = Project::find($slug);
+    $project = Project::findOrFail($slug);
     return view('project', compact('project'));
-})->name('project');
+});
