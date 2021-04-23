@@ -4,13 +4,13 @@
 
     <h1>Project Ideas</h1>
     <div class="all-projects">
-        <div class="project-container">
             @foreach($projects as $project)
                 <div class="project-content">
-                    {!! $project !!}
+                    <h2>{{$project->name}}</h2>
+                    <p>{{$project->desc}}</p>
+                    <a href="/projects/{{$project->slug}}">View Full Details</a>
                 </div>
             @endforeach
-        </div>
     </div>
 
 @endsection
